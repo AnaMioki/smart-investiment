@@ -213,7 +213,7 @@ button#btnComecar:hover {
 #boxes {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 300px;
     align-items: center;
     justify-content: space-around;
 }
@@ -221,15 +221,14 @@ button#btnComecar:hover {
 .box {
     display: flex;
     flex-direction: column;
-    width: 360px;
-    height: 250px;
+    width: 300px;
+    height: 210px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     padding: 15px;
     justify-content: space-around;
     text-align: center;
-    transition: all 0.3s ease;
 
     img {
         align-self: center;
@@ -241,7 +240,7 @@ button#btnComecar:hover {
 
     p {
         font-family: 'Poppins', sans-serif;
-        font-size: 25px;
+        font-size: 22px;
         color: #024002;
         font-weight: 700;
         text-align: center;
@@ -301,6 +300,167 @@ button#btnComecar:hover {
     margin-bottom: 29px;
 }
 
-#sobre{
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#sobre {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
+
+#pqSmart {
+    width: 100%;
+    padding-top: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boxesSmart {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boxSmart {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 210px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    text-align: center;
+
+
+
+    img {
+        align-self: center;
+        top: 0;
+        max-height: 100px;
+        width: 100px;
+        object-fit: contain;
+
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        color: #024002;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    span {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #555555;
+        text-align: center;
+        margin: 0 10px;
+    }
+}
+
+#olho {
+    height: 70px;
+    min-width: 100px;
+}
+
+#historia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    #tituloHistoria,
+    #descricaoHistoria {
+        position: relative;
+        z-index: 3;
+    }
+}
+
+#tituloHistoria {
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #004225;
+    margin-bottom: 20px;
+}
+
+#descricaoHistoria {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px;
+    width: 70%;
+    color: #004225;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+#descricaoHistoria * {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#historia #descricaoHistoria {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#segmentos {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #004225;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    p {
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 700;
+    }
+
+    span {
+        color: #ffb103;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 700;
+    }
+}
+
+#segmentos p#textoSegmentos {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 22px;
+    color: #004225;
+    text-align: center;
+    width: 70%;
+    margin: 20px auto 40px auto;
+    font-weight: 300 !important;
+}
+
+#textoSegmentos.texto {
+    font-weight: 300 !important;
+}
+
+#textoSegmentos {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #004225;
+    text-align: center;
+    width: 70%;
+    margin: 20px auto 40px auto;
+    font-weight: 300 !important; 
+}
+
