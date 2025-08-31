@@ -214,7 +214,6 @@ button#btnComecar:hover {
     display: flex;
     width: 100%;
     height: 400px;
-    /* margin-top: 50px; */
     align-items: center;
     justify-content: space-around;
 }
@@ -267,6 +266,7 @@ button#btnComecar:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 
 #inicio {
@@ -299,4 +299,8 @@ button#btnComecar:hover {
     width: 74%;
     font-size: 22px;
     margin-bottom: 29px;
+}
+
+#sobre{
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
