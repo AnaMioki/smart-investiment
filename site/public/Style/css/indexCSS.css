@@ -4,13 +4,15 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
+    scroll-behavior: smooth
 }
 
 ;
 
 body {
     display: flex;
-    background-color: #f8f8f9
+    background-color: #f8f8f9;
+
 }
 
 ;
@@ -77,12 +79,11 @@ img#logo {
 .navbar a:hover {
     color: #168500d2;
     transform: scale(2.5);
-    font-size: 22px;
     text-decoration: underline #004225;
 }
 
 button#btnComecar {
-    width: 150px;
+    width: 170px;
     height: 40px;
     background-color: #004225;
     color: #ffffff;
@@ -107,9 +108,8 @@ button#btnComecar:hover {
     top: -190px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1000px;
+    width: 700px;
     z-index: -1;
-    opacity: 0.7;
 }
 
 #imagemPrincipal {
@@ -117,27 +117,26 @@ button#btnComecar:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 320px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     object-fit: contain;
 
     img {
-        width: 540px;
-
+        margin-top: 50px;
+        width: 390px;
     }
 }
 
 #fraseEfeito {
     font-family: Poppins, sans-serif;
     display: flex;
-    font-size: 60px;
+    font-size: 38px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    padding: 0 20px;
     font-weight: 700;
 
     p {
@@ -157,11 +156,11 @@ button#btnComecar:hover {
     width: 80%;
     align-content: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 400;
     color: #555555;
     text-align: center;
-    margin-top: 40px;
-    padding: 0 20px;
+    margin-top: 20px;
 }
 
 #botoes {
@@ -215,7 +214,7 @@ button#btnComecar:hover {
     display: flex;
     width: 100%;
     height: 400px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     align-items: center;
     justify-content: space-around;
 }
@@ -226,7 +225,7 @@ button#btnComecar:hover {
     width: 360px;
     height: 250px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     padding: 15px;
     justify-content: space-around;
@@ -241,7 +240,7 @@ button#btnComecar:hover {
         object-fit: contain;
     }
 
-    p{
+    p {
         font-family: 'Poppins', sans-serif;
         font-size: 25px;
         color: #024002;
@@ -250,7 +249,7 @@ button#btnComecar:hover {
         margin: 0 10px;
     }
 
-    span{
+    span {
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
         color: #555555;
@@ -275,4 +274,29 @@ button#btnComecar:hover {
     width: 100%;
     box-shadow: 0 0.4px 60px 30px rgba(0, 0, 0, 0.1);
     padding-bottom: 110px;
+}
+
+#tituloSobre {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #004225;
+    margin-top: 20px;
+
+    span {
+        color: #ffb103;
+        font-family: Poppins, sans-serif;
+    }
+}
+
+#descricaoSobre {
+    font-family: Poppins, sans-serif;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 74%;
+    font-size: 22px;
+    margin-bottom: 29px;
 }
