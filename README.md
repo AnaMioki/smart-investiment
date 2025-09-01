@@ -19,11 +19,11 @@ Visão: Ser a principal referência em tecnologia para investimentos no Brasil;<
 Valores: Transparência, inovação, segurança e compromisso com o sucesso financeiro dos usuários;<br>
 
 🛠️ Tecnologias Utilizadas
-<div align="center"> <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,mysql,github,git"> <br /> </div>
+<div align="center"> <img src="https://skillicons.dev/icons?i=html,css,js,java,mysql,github,git"> <br /> </div>
 
-Frontend: HTML / CSS / JavaScript
+Frontend: HTML / CSS
 
-Backend: Node.js
+Backend:
 
 Banco de Dados: MySQL
 
