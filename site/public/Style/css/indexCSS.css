@@ -303,19 +303,20 @@ button#btnComecar:hover {
 #sobre {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    height: auto;
 }
 
 #pqSmart {
     width: 100%;
-    padding-top: 10px;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .boxesSmart {
     display: flex;
     width: 100%;
-    height: 350px;
+    height: 340px;
     align-items: center;
     justify-content: space-around;
 }
@@ -376,6 +377,7 @@ button#btnComecar:hover {
     text-align: center;
     position: relative;
     overflow: hidden;
+    padding: 20px 0 40px 0;
 
     img {
         position: absolute;
@@ -395,7 +397,7 @@ button#btnComecar:hover {
 
 #tituloHistoria {
     font-family: 'Poppins', sans-serif;
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 700;
     color: #004225;
     margin-bottom: 20px;
@@ -427,6 +429,9 @@ button#btnComecar:hover {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     p {
         font-family: 'Poppins', sans-serif !important;
@@ -461,6 +466,281 @@ button#btnComecar:hover {
     text-align: center;
     width: 70%;
     margin: 20px auto 40px auto;
-    font-weight: 300 !important; 
+    font-weight: 300 !important;
 }
 
+.boxesSegmentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.boxSegmento {
+    border-top: 10px solid #004225;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#boxConservador {
+    border-top: 10px solid #2b61e2;
+}
+
+#boxModerado {
+    border-top: 10px solid #435164;
+}
+
+#boxArrojado {
+    border-top: 10px solid #cb2625;
+}
+
+#boxInstitucional {
+    border-top: 10px solid #8e39e1;
+}
+
+.superior {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #004225;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+.icone {
+    width: 90px;
+    object-fit: contain;
+}
+
+.tituloSegmento {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #004225;
+    font-weight: 700;
+    margin: 0;
+}
+
+.textoSegmentos {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #555555;
+    text-align: left;
+    margin: 0;
+    font-weight: 500 !important;
+}
+
+.inferior {
+    border-top: 1px solid #000000;
+    padding-top: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.subTitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #555555;
+    text-align: left;
+    margin: 0;
+    font-weight: 500 !important;
+}
+
+#solucao {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;  
+    z-index: 1;         
+}
+
+#tituloSolucao {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #004225;
+    margin-top: 20px;
+
+    span {
+        color: #ffb103;
+        font-family: Poppins, sans-serif;
+    }
+}
+
+#textoSolucao {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 22px;
+    width: 70%;
+    color: #004225;
+    line-height: 1.5;
+    margin: 40px auto 40px auto;
+    font-weight: 400;
+}
+
+.fraseSolucao {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #004225;
+
+    h1 {
+        text-align: start;
+    }
+
+
+    img {
+        width: 50px;
+        margin-left: 10px;
+        object-fit: contain;
+    }
+}
+
+#conteudoSolucao {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#oferecemos {
+    width: 45%;
+    padding: 20px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    h1 {
+        text-align: start;
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: #004225;
+        margin-bottom: 20px;
+    }
+}
+
+.fraseSolucao {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 490;
+}
+
+#boxesSolucao {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    height: auto;
+
+}
+
+#btnComecar3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 55px;
+    background-color: #004225;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-left: 50px;
+    align-self: flex-start;
+}
+
+#btnComecar3:hover {
+    background-color: #027433;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.boxSolucao {
+    font-family: 'Poppins', sans-serif !important;
+    border: #004225 1px solid;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 160px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px 15px 0 15px;
+    gap: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        color: #004225;
+        font-weight: 700;
+        margin: 0 10px 40px;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: #555555;
+        text-align: start;
+        margin: 0 10px;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+.iconeSolucao {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 10px;
+}
+
+#interrogacao {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    object-fit: contain;
+    opacity: 0.1;
+    z-index: -1;
+    left: -300px;
+}
+
+#funcionamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;                                 
+}
