@@ -567,8 +567,8 @@ button#btnComecar:hover {
     padding-bottom: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    position: relative;  
-    z-index: 1;         
+    position: relative;
+    z-index: 1;
 }
 
 #tituloSolucao {
@@ -727,11 +727,11 @@ button#btnComecar:hover {
 #interrogacao {
     position: absolute;
     width: 800px;
-    height: 800px;
-    object-fit: contain;
+    height: 700px;
     opacity: 0.1;
     z-index: -1;
     left: -300px;
+    top: -40px;
 }
 
 #funcionamento {
@@ -740,7 +740,268 @@ button#btnComecar:hover {
     align-items: center;
     padding: 50px 20px;
     position: relative;
-    background-color: #ffffff;
+    background-color: #f8f8f9;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 0;                                 
+    z-index: 0;
+    gap: 20px;
+    height: 90vh;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        color: #004225;
+        margin-bottom: 20px;
+
+        span {
+            color: #ffb103;
+            font-family: Poppins, sans-serif;
+        }
+    }
+}
+
+#etapas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.etapa {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+
+    .numeroEtapa {
+        font-family: 'Poppins', sans-serif;
+        width: 80px;
+        min-height: 80px;
+        background-color: #004225;
+        color: #ffffff;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: #004225;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #555555;
+        font-weight: 400;
+    }
+}
+
+.etapa:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 190px;
+    width: 300px;
+    height: 2px;
+    background-color: #004225;
+}
+
+#conteudoContato {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 8%;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+    background-color: #f8f8f9;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    height: 95vh;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        color: #004225;
+        margin-bottom: 10px;
+
+    }
+
+    span {
+        text-align: center;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 22px;
+        width: 70%;
+        color: #004225;
+        line-height: 1.5;
+        margin: 0 auto 40px auto;
+        font-weight: 400;
+    }
+
+}
+
+.contatoItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: left;
+    max-height: 100px;
+    justify-content: space-between;
+
+    img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+}
+
+.contatoTexto {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        color: #004225;
+        font-weight: 700;
+        margin: 0;
+        text-align: left;
+    }
+
+    p {
+        width: 300px;
+        font-size: 18px;
+        font-family: Poppins, sans-serif;
+        color: #004225;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+
+#formularioContato {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 60%;
+    background-color: #fff;
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        align-self: flex-start;
+        font-size: 30px;
+    }
+}
+
+.inputsLinha {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.grupoInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    color: #004225;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input,
+select {
+    width: 100%;
+    height: 45px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 97%;
+    min-height: 80px;
+    max-height: 150px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+    margin-top: auto;
+}
+
+#btnEnviarMensagem {
+    width: 50%;
+    height: 55px;
+    background-color:#004225 ;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    align-self: flex-end;
+}
+
+#btnEnviarMensagem:hover {
+    transition: all 0.3s ease;
+    
+}
+
+#footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    background-color: #004225;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+    span {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        opacity: 0.2;
+    }
 }
